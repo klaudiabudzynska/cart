@@ -1,7 +1,7 @@
 .products-container{
   margin: 80px auto;
   width: 80%;
-  min-width: 1200px;
+  max-width: 1700px
 }
 
 h1{
