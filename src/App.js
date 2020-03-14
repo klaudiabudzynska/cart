@@ -1,9 +1,11 @@
 import React from 'react';
 
+import ProductsList from './productsList/ProductsList';
+
 function App() {
   return (
     <div className="App">
-      Hello
+      <ProductsList />
     </div>
   );
 }
