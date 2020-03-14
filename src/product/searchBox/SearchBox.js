@@ -5,7 +5,7 @@ function SearchBox() {
   return (
     <input 
       type="text" 
-      value={name} 
+      value={value} 
       onChange={e => setValue(e.value)}
     />
   );
