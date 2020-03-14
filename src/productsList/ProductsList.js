@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+import './productsList.css';
 import Product from '../product/Product';
 
 function ProductsList() {
@@ -14,8 +15,11 @@ function ProductsList() {
   }, [])
 
   return (
-    <div>
-      {products.map(product => <Product key={product.id} name={product.name} price={product.price}/>)}
+    <div className="products-container">
+      <h1>Our products</h1>
+      <div className="products-container__list">
+        {products.map(product => <Product key={product.id} name={product.name} price={product.price}/>)}
+      </div>
     </div>
   );
 }

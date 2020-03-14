@@ -1,0 +1,28 @@
+.products-container{
+  margin: 80px auto;
+  width: 80%;
+  min-width: 1200px;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+h1::after{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 40px;
+  background: #7C8C8A;
+  left: 2px;
+  bottom: -10px;
+}
+
+.products-container__list{
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
