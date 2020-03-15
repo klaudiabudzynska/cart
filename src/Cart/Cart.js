@@ -1,13 +1,13 @@
 import React from 'react';
 
-import chartData from '../ChartData';
+import cartData from '../CartData';
 
-function Chart() {
+function Cart() {
 
   return (
     <div>
       {
-        chartData.getProducts().map(product => {
+        cartData.getProducts().map(product => {
           return <div key={product.id}>{product.name}</div>
         })
       }
@@ -15,4 +15,4 @@ function Chart() {
   );
 }
 
-export default Chart;
+export default Cart;

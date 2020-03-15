@@ -1,4 +1,4 @@
-class ChartData {
+class CartData {
   constructor(){
     this.products = []
   }
@@ -26,4 +26,4 @@ class ChartData {
   }
 }
 
-export default new ChartData();
+export default new CartData();

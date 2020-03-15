@@ -5,7 +5,7 @@ import ProductsList from '../productsList/ProductsList';
 function MainPage() {
   return (
     <div>
-      <Link to="/chart">chart</Link>
+      <Link to="/cart">cart</Link>
       <ProductsList />
     </div>
   );
