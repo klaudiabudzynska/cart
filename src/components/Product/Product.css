@@ -40,3 +40,17 @@
   font-size: 1.1rem;
   margin-left: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+  .product--shop {
+    margin: 20px 0;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .product__cta{
+    padding: 0 10px;
+    height: 30px;
+    font-size: 0.7em;
+  }
+}
