@@ -29,6 +29,20 @@
   transition: 0.2s;
 }
 
+.CartItem__amount{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CartItem__amount p{
+  margin: 0 10px;
+}
+
+.CartItem__amount button{
+  margin: 0;
+}
+
 .CartItem__details .CartItem__remove{
   background: #E05959;
   color: #fff;
@@ -40,4 +54,27 @@
 .CartItem__remove:hover{
   color: #E05959;
   background: #fff;
+}
+
+@media only screen and (max-width: 768px){
+  .CartItem{
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .CartItem__details{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .CartItem__details div,
+  .CartItem__details button{
+    margin: 5px 0;
+  }
+
+  .CartItem__remove i{
+    font-size: 1.5em;
+  }
 }

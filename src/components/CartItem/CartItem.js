@@ -26,13 +26,15 @@ function CartItem(props) {
           <p>{props.product.price}</p>
           <span>PLN</span>
         </div>
-        <button 
-          onClick={() => {if(props.product.amount > 0) changeAmount(-1)}}
-        >-</button>
-        <p>{props.product.amount}</p>
-        <button 
-          onClick={() => changeAmount(1)}
-        >+</button>
+        <div className="CartItem__amount">
+          <button 
+            onClick={() => {if(props.product.amount > 0) changeAmount(-1)}}
+          >-</button>
+          <p>{props.product.amount}</p>
+          <button 
+            onClick={() => changeAmount(1)}
+          >+</button>
+        </div>
         <button className="CartItem__remove"onClick={removeItem}>
         <i className="material-icons">
           delete
