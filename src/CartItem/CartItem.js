@@ -6,6 +6,11 @@ import cartData from '../CartData';
 
 function CartItem(props) {
 
+  const removeItem = () => {
+    cartData.removeProduct(props.product.id);
+    props.handleItemRemove();
+  }
+
   return (
     <li className="CartItem product">
       <p className="product__name">
@@ -17,7 +22,7 @@ function CartItem(props) {
           <span>PLN</span>
         </div>
         <p>{props.product.count}</p>
-        <button onClick={() => cartData.removeProduct(props.product.id)}>
+        <button onClick={removeItem}>
         <i class="material-icons">
           delete
         </i>
