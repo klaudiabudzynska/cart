@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ProductsList from '../productsList/ProductsList';
+import ProductsList from '../ProductsList/ProductsList';
 
 function MainPage() {
   return (

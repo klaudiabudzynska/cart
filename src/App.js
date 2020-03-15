@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import MainPage from './MainPage/MainPage';
-import Cart from './Cart/Cart';
+import MainPage from './components/MainPage/MainPage';
+import Cart from './components/Cart/Cart';
 
 function App() {
   return (

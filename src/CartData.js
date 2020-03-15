@@ -1,13 +1,12 @@
 class CartData {
   constructor(){
-    this.products = [{id:1,"name":"Sprouts - Brussel",price:88.19, amount:2},
-    {id:2,name:"Evaporated Milk - Skim",price:53.54, amount: 1}]
+    this.products = []
   }
 
   setProduct(product){
     if(product.amount) product.amount++ 
     else{
-      product.amount = 1; 
+      product.amount = 1;
       this.products.push(product);
     }
   }

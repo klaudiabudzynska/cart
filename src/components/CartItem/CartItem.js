@@ -1,8 +1,8 @@
 import React from 'react';
 
-import '../css/product.css';
+import '../../css/product.css';
 import './CartItem.css';
-import cartData from '../CartData';
+import cartData from '../../CartData';
 
 function CartItem(props) {
 

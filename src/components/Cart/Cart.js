@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-import '../css/heading.css';
+import '../../css/heading.css';
 import './Cart.css';
-import cartData from '../CartData';
+import cartData from '../../CartData';
 import CartItem from '../CartItem/CartItem';
 
 function Cart() {

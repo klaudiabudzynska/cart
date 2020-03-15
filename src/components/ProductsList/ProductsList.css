@@ -1,10 +1,10 @@
-.products-container{
+.products{
   margin: 80px auto;
   width: 80%;
   max-width: 1700px
 }
 
-.products-container__list{
+.products__list{
   width: 100%;
   margin-top: 40px;
   display: flex;
