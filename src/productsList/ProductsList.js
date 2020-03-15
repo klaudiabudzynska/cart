@@ -21,7 +21,7 @@ function ProductsList() {
   useEffect(() => {
     let list = [];
     
-    products.filter(product => {
+    products.forEach(product => {
       const reg = new RegExp(`\w*${filter}`, 'gi')
       if(reg.test(product.name)){
         list.push(
@@ -33,9 +33,7 @@ function ProductsList() {
     setProductsList(list)
   }, [products, filter])
 
-  const handleSearch = (value) => {
-    setFilter(value);
-  }
+  const handleSearch = (value) => setFilter(value);
 
   return (
     <div className="products-container">

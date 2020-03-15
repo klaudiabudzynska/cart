@@ -8,7 +8,12 @@ function CartItem(props) {
 
   const removeItem = () => {
     cartData.removeProduct(props.product.id);
-    props.handleItemRemove();
+    props.handleItemChange();
+  }
+
+  const changeAmount = (diff) => {
+    cartData.updateProductAmount(props.product.id, diff)
+    props.handleItemChange();
   }
 
   return (
@@ -21,9 +26,15 @@ function CartItem(props) {
           <p>{props.product.price}</p>
           <span>PLN</span>
         </div>
-        <p>{props.product.count}</p>
-        <button onClick={removeItem}>
-        <i class="material-icons">
+        <button 
+          onClick={() => {if(props.product.amount > 0) changeAmount(-1)}}
+        >-</button>
+        <p>{props.product.amount}</p>
+        <button 
+          onClick={() => changeAmount(1)}
+        >+</button>
+        <button className="CartItem__remove"onClick={removeItem}>
+        <i className="material-icons">
           delete
         </i>
         </button>

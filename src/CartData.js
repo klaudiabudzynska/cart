@@ -1,15 +1,24 @@
 class CartData {
   constructor(){
-    this.products = [{id:1,"name":"Sprouts - Brussel",price:88.19, count:2},
-    {id:2,name:"Evaporated Milk - Skim",price:53.54, count: 1}]
+    this.products = [{id:1,"name":"Sprouts - Brussel",price:88.19, amount:2},
+    {id:2,name:"Evaporated Milk - Skim",price:53.54, amount: 1}]
   }
 
   setProduct(product){
-    if(product.count) product.count++ 
+    if(product.amount) product.amount++ 
     else{
-      product.count = 1; 
+      product.amount = 1; 
       this.products.push(product);
     }
+  }
+
+  updateProductAmount(productId, diff){
+    this.products.forEach(product => {
+      if(product.id === productId){
+        product.amount += diff
+        return;
+      }
+    })
   }
 
   getProducts(){
@@ -28,7 +37,7 @@ class CartData {
   getTotalPrice(){
     let total = 0;
     this.products.forEach(product => {
-      total += product.count * product.price
+      total += product.amount * product.price;
     })
 
     return total;

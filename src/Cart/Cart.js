@@ -9,7 +9,7 @@ function Cart() {
 
   const [ reload, setReload ] = useState(0);
 
-  const handleItemRemove = () => setReload(reload + 1);
+  const handleItemChange = () => setReload(reload + 1);
 
   return (
     <div className="Cart">
@@ -21,7 +21,7 @@ function Cart() {
             <CartItem 
               key={product.id} 
               product={product} 
-              handleItemRemove={handleItemRemove}
+              handleItemChange={handleItemChange}
             />
           )
         })
