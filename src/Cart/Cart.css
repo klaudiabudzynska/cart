@@ -1,0 +1,9 @@
+.Cart{
+  margin: 80px auto;
+  width: 80%;
+  max-width: 1700px
+}
+
+.Cart__list{
+  padding: 20px 0 0 0;
+}

@@ -1,10 +1,10 @@
-.product{
-  box-shadow: 0 4px 4px 2px #F2F4F7;
-  font-family: 'Montserrat', sans-serif;
-  padding: 30px;
+*{
+  box-sizing: border-box;
+}
+
+.product--shop{
   display: flex;
   justify-content: space-between;
-  margin: 30px;
   width: 400px;
 }
 
@@ -13,29 +13,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.product__name{
-  font-size: 1.2em;
-  margin: 0 0 10px 0;
-}
-
-.product__price{
-  color: #58CEA3;
-  font-weight: bold;
-  display: flex;
-  align-items: flex-end;
-  font-size: 1.5em;
-  font-family: 'Baloo Chettan 2', cursive;
-}
-
-.product__price p{
-  margin: 0;
-}
-
-.product__price span{
-  font-size: 0.8rem;
-  margin: 0 0 0.2em 5px;
 }
 
 .product__cta{

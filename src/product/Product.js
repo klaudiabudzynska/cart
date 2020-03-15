@@ -1,11 +1,12 @@
 import React from 'react';
 
+import '../css/product.css'
 import './product.css';
 import cartData from '../CartData';
 
 function Product(props) {
   return (
-    <div className="product">
+    <div className="product product--shop">
       <div className="product__descripton">
         <p className="product__name">
           {props.product.name}

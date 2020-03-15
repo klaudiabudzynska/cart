@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+import '../css/heading.css';
 import './productsList.css';
 import Product from '../product/Product';
 import SearchBox from '../searchBox/SearchBox';

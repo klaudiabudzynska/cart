@@ -1,6 +1,7 @@
 class CartData {
   constructor(){
-    this.products = []
+    this.products = [{id:1,"name":"Sprouts - Brussel",price:88.19, count:2},
+    {id:2,name:"Evaporated Milk - Skim",price:53.54, count: 1}]
   }
 
   setProduct(product){
@@ -12,7 +13,6 @@ class CartData {
   }
 
   getProducts(){
-    console.log(this.products);
     return this.products
   }
 

@@ -1,0 +1,14 @@
+h1{
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+h1::after{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 40px;
+  background: #7C8C8A;
+  left: 2px;
+  bottom: -10px;
+}
