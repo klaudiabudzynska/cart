@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './product.css';
-import chartData from '../Chart/ChartData';
+import chartData from '../ChartData';
 
 function Product(props) {
   return (
@@ -17,7 +17,10 @@ function Product(props) {
       </div>
       <button 
         className="product__cta" 
-        onClick={() => chartData.setProduct(props.product)}
+        onClick={() => {
+          chartData.getProducts()
+          chartData.setProduct(props.product)
+        }}
       >
         <span>Add to chart</span>
         <i className="material-icons">
