@@ -5,6 +5,7 @@ class ChartData {
 
   setProduct(product){
     product.count ? product.count++ : product.count = 1;
+    console.log(product);
     this.products.push(product);
   }
 

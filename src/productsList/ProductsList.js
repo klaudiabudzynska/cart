@@ -24,7 +24,7 @@ function ProductsList() {
       const reg = new RegExp(`\w*${filter}`, 'gi')
       if(reg.test(product.name)){
         list.push(
-          <Product key={product.id} name={product.name} price={product.price}/>
+          <Product key={product.id} product={product}/>
         )
       }
     })

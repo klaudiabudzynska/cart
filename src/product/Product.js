@@ -1,20 +1,24 @@
 import React from 'react';
 
 import './product.css';
+import chartData from '../Chart/ChartData';
 
 function Product(props) {
   return (
     <div className="product">
       <div className="product__descripton">
         <p className="product__name">
-          {props.name}
+          {props.product.name}
         </p>
         <div className="product__price">
-          <p>{props.price}</p>
+          <p>{props.product.price}</p>
           <span>PLN</span>
         </div>
       </div>
-      <button className="product__cta">
+      <button 
+        className="product__cta" 
+        onClick={() => chartData.setProduct(props.product)}
+      >
         <span>Add to chart</span>
         <i className="material-icons">
         shopping_cart
