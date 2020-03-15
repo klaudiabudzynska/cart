@@ -2,4 +2,35 @@
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.CartItem__details{
+  display: flex;
+  align-items: center;
+}
+
+.CartItem__details div,
+.CartItem__details button{
+  margin: 0 20px;
+}
+
+.CartItem__details button{
+  outline: none;
+  background: #E05959;
+  color: #fff;
+  border: 2px solid #E05959;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.CartItem__details button:hover{
+  color: #E05959;
+  background: #fff;
 }

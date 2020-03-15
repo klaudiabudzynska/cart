@@ -5,12 +5,13 @@ import './CartItem.css';
 import cartData from '../CartData';
 
 function CartItem(props) {
+
   return (
     <li className="CartItem product">
       <p className="product__name">
         {props.product.name}
       </p>
-      <div>
+      <div className="CartItem__details">
         <div className="product__price">
           <p>{props.product.price}</p>
           <span>PLN</span>
