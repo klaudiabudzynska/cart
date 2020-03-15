@@ -8,8 +8,7 @@ function Chart() {
     <div>
       {
         chartData.getProducts().map(product => {
-          console.log(product);
-          return <div>{product.name}</div>
+          return <div key={product.id}>{product.name}</div>
         })
       }
     </div>

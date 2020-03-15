@@ -4,9 +4,11 @@ class ChartData {
   }
 
   setProduct(product){
-    product.count ? product.count++ : product.count = 1;
-    console.log(product);
-    this.products.push(product);
+    if(product.count) product.count++ 
+    else{
+      product.count = 1; 
+      this.products.push(product);
+    }
   }
 
   getProducts(){
