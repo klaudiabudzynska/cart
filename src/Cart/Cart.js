@@ -27,6 +27,13 @@ function Cart() {
         })
       }
       </ul>
+      <div className="Cart__summary">
+        <p>Total:</p>
+        <div className="summary__price">
+          <p>{cartData.getTotalPrice()}</p>
+          <span>PLN</span>
+        </div>
+      </div>
     </div>
   );
 }

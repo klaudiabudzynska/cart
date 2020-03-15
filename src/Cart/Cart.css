@@ -7,3 +7,34 @@
 .Cart__list{
   padding: 20px 0 0 0;
 }
+
+.Cart__summary{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 30px;
+}
+
+.Cart__summary p{
+  margin-right: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.summary__price{
+  color: #58CEA3;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.5em;
+  font-family: 'Baloo Chettan 2', cursive;
+}
+
+.summary__price p{
+  margin: 0;
+}
+
+.summary__price span{
+  font-size: 0.8rem;
+  margin: 0 0 0.2em 5px;
+}

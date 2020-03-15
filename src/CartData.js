@@ -24,6 +24,15 @@ class CartData {
       }
     })
   }
+
+  getTotalPrice(){
+    let total = 0;
+    this.products.forEach(product => {
+      total += product.count * product.price
+    })
+
+    return total;
+  }
 }
 
 export default new CartData();
