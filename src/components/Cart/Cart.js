@@ -16,6 +16,7 @@ function Cart() {
       <h1>Cart</h1>
       <ul className="Cart__list">
       {
+        cartData.getProducts().length > 0 ?
         cartData.getProducts().map(product => {
           return (
             <CartItem 
@@ -25,6 +26,8 @@ function Cart() {
             />
           )
         })
+        :
+        <p className="Cart__info">Cart is empty</p>
       }
       </ul>
       <div className="Cart__summary">

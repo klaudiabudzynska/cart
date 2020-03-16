@@ -1,0 +1,24 @@
+.MainPage{
+  margin: 80px auto;
+  width: 80%;
+  max-width: 1700px
+}
+
+.MainPage__cartLink{
+  text-decoration: none;
+  height: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9em;
+  padding: 5px 20px;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: 600;
+  border: 2px solid #58CEA3;
+  background: #58CEA3;
+  transition: 0.2s;
+}
+
+.MainPage__cartLink:hover{
+  background: #fff;
+  color: #58CEA3;
+}

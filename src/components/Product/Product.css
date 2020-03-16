@@ -1,7 +1,3 @@
-*{
-  box-sizing: border-box;
-}
-
 .product--shop{
   display: flex;
   justify-content: space-between;

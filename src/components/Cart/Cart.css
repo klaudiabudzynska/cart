@@ -8,6 +8,12 @@
   padding: 20px 0 0 0;
 }
 
+.Cart__info{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3em;
+}
+
 .Cart__summary{
   display: flex;
   justify-content: flex-end;
